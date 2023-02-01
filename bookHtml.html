@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books rec</title>
+    <link rel="stylesheet" href="bookStyle.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Books Recs</h1>
+        <p>The best place to catalogue your favourite books. <br>Simple and easy to use.</p>
+    </header>
+    <main>
+        <!-- form -->
+        <form id="book-form">
+            <!-- title -->
+            <div class="form-control">
+                <label for="title">title</label>
+                <input type="text" id="title" placeholder="Enter book title">
+            </div>
+            <!-- author -->
+            <div class="form-control">
+                <label for="author">author</label>
+                <input type="text" id="author" placeholder="Enter author of book">
+            </div>
+            <!-- release date -->
+            <div class="form-control">
+                <label for="release-date">Year of Publication</label>
+                <input type="text" id="release-date" placeholder="Enter year of publication">
+            </div>
+            <!-- genre -->
+            <div class="form-control">
+                <label for="genre">genre</label>
+                <input type="text" id="genre" placeholder="Enter the genre">
+            </div>
+            <!-- rating -->
+            <div class="form-control">
+                <label for="rating">rating</label>
+                <input type="text" id="rating" placeholder="How do you rate the book?">
+            </div>
+            <div class="btns">
+                <input type="submit" value="Add Books" class="btn" id="btn-add">
+                <input type="button" value="Clear" class="btn" id="btn-clear">
+            </div>
+        </form>
+
+
+        <!-- table -->
+        <table>
+            <!-- table header -->
+            <thead>
+                <tr>
+                    <th>title</th>
+                    <th>author</th>
+                    <th>release date</th>
+                    <th>genre</th>
+                    <th>ratings</th>
+                    <th><!--edit--></th>
+                    <th><!--delete--></th>
+                </tr>
+            </thead>
+
+            <!-- table body -->
+            <tbody id="book-list">
+                <!-- <tr>
+                    <td> <a href="" class="edit btn btn-edit">edit</a></td>
+                    <td>The bio of Amin</td>
+                    <td>Dr. Amin</td>
+                    <td>2009</td>
+                    <td>Non-fiction</td>
+                    <td>Good</td>
+                    <td><a href="" class="delete btn btn-danger">X</a></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </main>
+    <!-- script -->
+    <script src="bookMain.js"></script>
+</body>
+</html>
